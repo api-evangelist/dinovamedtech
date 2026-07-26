@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: probed
+source: dig + TLS/HTTP HEAD on dinovamedtech.com
+notes: >-
+  Domain resolves (A 156.237.181.215) and delegates to Cloudflare nameservers,
+  but the web server did not respond on HTTPS or HTTP (connection timed out /
+  refused during this probe). No email or domain-hardening DNS records are
+  published. Absence of records is valid recorded data, not a fabrication.
+hosts:
+  - host: dinovamedtech.com
+    https: false
+    reachable: false
+    tls_version: null
+    hsts: false
+    hsts_max_age: null
+domains:
+  - domain: dinovamedtech.com
+    nameservers: [amanda.ns.cloudflare.com, ken.ns.cloudflare.com]
+    dnssec: false
+    caa: []
+    spf: false
+    dmarc: false
+    dmarc_policy: null
+    mx: []
